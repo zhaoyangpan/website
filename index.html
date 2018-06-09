@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="Shortcut Icon" type="image/x-icon" href="./static/favicon.ico">
+    <title>56文化后台管理系统</title>
+    <script type="text/javascript">	
+    	//检查是否存在session
+      let user = JSON.parse(sessionStorage.getItem('username'));
+      if(!user){
+        //如果没有登录状态则跳转到登录页
+        window.location.href = '/login.html'
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
